@@ -1,24 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Document</title>
-</head>
-<body>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Firstname Lastname — Portfolio</title>
+        <meta name="description" content="Professional portfolio of Firstname Lastname">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#"><img src="images/cross.svg" alt="" class="cross-sm me-2">Firstname Lastname</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"> 
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <div class="alert alert-warning">
-        <h1 class="text-center mt-5">Hello, Bootstrap!</h1>
-        <p class="lead text-center">This is a simple Bootstrap-styled page.</p>
-        <div class="d-flex justify-content-center">
-            <button class="btn btn-primary">Click Me</button>
-        </div>
-    </div>
-    
-</body>
-<script src="js/bootstrap.bundle.min.js"></script>
-</html> 
+        <header class="bg-light py-5">
+            <div class="container d-flex align-items-center">
+                <img src="https://via.placeholder.com/160" alt="Avatar" class="rounded-circle me-4 avatar">
+                <div>
+                    <h1 class="display-5 mb-1 metallic">Saban Chrisstan</h1>
+                    <div class="header-underline mb-2"></div>
+                    <p class="lead mb-0">Your title • Location • Short professional tagline.</p>
+                    <p class="mt-3"><a href="#contact" class="btn btn-outline-light">Contact Me</a></p>
+                </div>
+            </div>
+        </header>
+
+        <main class="container py-5">
+            <section id="about" class="mb-5">
+                <h2>About</h2>
+                <p>Concise professional summary. Focus on what you do, your primary technologies and the value you deliver.</p>
+            </section>
+
+            <section id="projects" class="mb-5">
+                <h2>Projects</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Project One</h5>
+                                <p class="card-text">Short description of the project and your role. <a href="#">View</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Project Two</h5>
+                                <p class="card-text">Short description of the project and technologies used. <a href="#">View</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="mb-5">
+                <h2>Skills</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul class="list-unstyled">
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-unstyled">
+                            <li>Bootstrap</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-unstyled">
+                            <li>Node.js</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="mb-5">
+                <h2>Contact</h2>
+                <form id="contactForm" class="row g-3" action="mailto:your@email.com" method="post" enctype="text/plain">
+                    <div class="col-md-6">
+                        <label class="form-label">Name</label>
+                        <input class="form-control" name="name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email" required>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-outline-primary" type="submit">Send</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer class="bg-transparent py-3 border-top">
+            <div class="container text-center small metallic" id="footerYear">© YEAR Firstname Lastname — Built with Bootstrap</div>
+        </footer>
+
+        <script src="bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
 
 
 
